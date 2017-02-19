@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('parser');
+$autoload['libraries'] = array('parser','database');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,16 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+$autoload['model'] = array('flags', 'groups', 'priorities', 'sizes', 'statuses', 'tasks');
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Markdown Processor
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['libraries'] = array'parser', 'database', 'parsedown');
+|
+*/
+$autoload['libraries'] = array('parser', 'database', 'parsedown');
